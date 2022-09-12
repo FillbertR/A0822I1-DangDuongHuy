@@ -21,17 +21,31 @@
             font-weight: 150;
             color: #232323;
         }
+        .command{
+            width: 500px;
+            height: 200px;
+        }
+        .text-name{
+            width: 190px;
+        }
+        .dollar{
+            width: 100px;
+        }
+        .cents{
+            width: 70px;
+        }
     </style>
     <title>Document</title>
 </head>
 <body>
+    <header>
     <form action="#" method="post">
         <h1>Market Research Survey</h1>
         <p class="under-head">Please take a few moments to complete this satisfaction Survey</p>
         <ul>
             <li>
                 <p>What is your age ranger?</p>
-                <select tabindex="0" width="20px" height="30px">
+                <select tabindex="0" style="width: 200px;">
                     <option value="18-24">18-24</option>
                     <option value="25-34">25-34</option>
                     <option value="35-50">35-50</option>
@@ -40,7 +54,7 @@
             </li>
             <li>
                 <p>What is your yearly income ranger?</p>
-                <select tabindex="0">
+                <select tabindex="0" style="width: 200px;">
                     <option value="0 - $25000">0 - $25000</option>
                     <option value="$25001 - $50000">$25001 - $50000</option>
                     <option value="$50001 - $100000">$50001 - $100000</option>
@@ -53,7 +67,7 @@
                 <input type="radio" name="gender" value="female">Female<br>
                 <input type="radio" name="gender" value="nonbinary">Nonbirary<br> 
                 <input type="radio" name="gender" value="other">Other<br>
-                <input type="text" name="gender">   
+                <input type="text" name="gender" class="text-name">   
             </li>
             <li>
                 <p>Which of the following products have your purchased in the last 2 months. Please check all that apply</p>
@@ -75,13 +89,13 @@
                             $
                         </th>
                         <th>
-                            <input type="number" name="money">
+                            <input type="number" name="money" class="dollar">
                         </th>
                         <th>
                             .
                         </th>
                         <th>
-                            <input type="number" name="money">
+                            <input type="number" name="money" class="cents">
                         </th>
                     </tr>
                     <tr>
@@ -94,9 +108,10 @@
             </li>
             <li>
                 <p>What features would you like to see in the new product.</p>
-                <input type="text" name="command" size="50">
+                <input type="text" name="command" class="command">
             </li>
         </ul>
     </form>
+    </header>
 </body>
 </html>
