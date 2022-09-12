@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table {
+            position:absolute;
+            width: 0 50%;
+            height: auto;
+
+        }
+        p{
+            color: blue;
+        }
+        .hobby {
+            color: orange;
+        }
+        h1{
+            background-color: orange;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table border="0">
+            <tr>
+                <th colspan="5"><h1>
+                    Sở thích của bạn
+                </h1></th>
+            </tr>
+            <tr>
+                <td><p>Họ và tên</p></td><td colspan="2"><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td><p>Email</p></td><td colspan="2"><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td><p>Sở thích</p>
+                    <td class="hobby"><input type="checkbox" name="hobby" value="sport" >Thể thao</td>
+                    <td class="hobby"><input type="checkbox" name="hobby" value="music" ">Âm nhạc</td>
+                    <td class="hobby"><input type="checkbox" name="hobby" value="reading" >Đọc sách</td>
+                </td>
+            </tr>
+                <td>
+                    <td class="hobby"><input type="checkbox" name="hobby" value="internet" >Lướt web</td>
+                    <td class="hobby"><input type="checkbox" name="hobby" value="game" >Chơi game</td>
+                    <td class="hobby"> <input type="checkbox" name="hobby" value="movie" >Điện ảnh</td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <td class="hobby"><input type="checkbox" name="hobby" value="travel">Du lịch</td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <td><button type="submit">Gửi thông tin</button></td>
+                    <td><button type="reset">Nhập lại</button></td>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
