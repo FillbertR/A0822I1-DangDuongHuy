@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .black  {
+            background-color: black;
+            width: 50px;
+            height: 50px;
+        }
+        .white  {
+            background-color: white;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .chess-table  {
+            border-collapse: collapse;
+            border: 20px solid yellow;
+            background-color: yellow;
+        }
+        
+        .weeks {
+            border: none;
+            
+        }
+        .first-line {
+            color: white;
+        }
+        .cnhat {
+            background-color: red;
+            width: 100px;
+            height: 30px;
+            color: white;
+        }
+        .inday  {
+            background-color: orange;
+            width: 106px;
+            height: 30px;
+            color: white;
+        }
+        .tbay {
+            background-color: blue;
+            width: 106px;
+            height: 30px;
+            color: white;
+        }
+        .sun {
+            color: red;
+            height: 30px;
+            width: 106px;
+        }
+        .sat {
+            color: blue;
+            width: 106px;
+            height: 30px;
+        }
+        .inday-1 {
+            color: black;
+            width: 103px;
+            height: 30px;
+        }
+        .weeks {
+            background-color: white;
+        }
+        .days {
+            border: 1px black;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table class="chess-table">
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+        </tr>
+        <tr>
+            <td><b>A</b></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td><b>B</b></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td><b>C</b></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td><b>D</b></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td><b>E</b></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td><b>F</b></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td><b>G</b></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td><b>H</b></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+    </table>
+    <br><br><br><br><br>
+    <table>
+        <table class="weeks">
+            <tr class="fisrt-line">
+                <th class="cnhat">C.Nhật</th>
+                <th class="inday">T.Hai</th>
+                <th class="inday">T.Ba</th>
+                <th class="inday">T.Tư</th>
+                <th class="inday">T.Năm</th>
+                <th class="inday">T.Sáu</th>
+                <th class="tbay">T.Bảy</th>
+            </tr>
+            <tr style="background-color: white;">
+                <th class="sun">Sun</th>
+                <th class="inday-1">Mon</th>
+                <th class="inday-1">Tue</th>
+                <th class="inday-1">Wed</th>
+                <th class="inday-1">Thu</th>
+                <th class="inday-1">Fri</th>
+                <th class="sat">Sat</th>
+            </tr>
+        </table>
+        <table class="days" border="1px">
+            <tr>
+                <th class="sun"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>1<sub>13</sub></th>
+                <th>2<sub>14</sub></th>
+                <th class="sat">3<sub>15</sub></th>
+            </tr>
+            <tr>
+                <th class="sun">4<sub>16</sub></th>
+                <th class="inday-1">5<sub>17</sub></th>
+                <th class="inday-1">6<sub>18</sub></th>
+                <th class="inday-1">7<sub>19</sub></th>
+                <th class="inday-1">9<sub>20</sub></th>
+                <th class="inday-1">10<sub>21</sub></th>
+                <th class="sat">11<sub>22</sub></th>
+            </tr>
+            <tr>
+                <th class="sun">12<sub>23</sub></th>
+                <th class="inday-1">13<sub>24</sub></th>
+                <th class="inday-1">14<sub>25</sub></th>
+                <th class="inday-1">15<sub>26</sub></th>
+                <th class="inday-1">16<sub>27</sub></th>
+                <th class="inday-1">17<sub>28</sub></th>
+                <th class="sat">18<sub>29</sub></th>
+            </tr>
+            <tr>
+                <th class="sun">19<sub>1.9</sub></th>
+                <th class="inday-1">20<sub>2</sub></th>
+                <th class="inday-1">21<sub>3</sub></th>
+                <th class="inday-1">22<sub>4</sub></th>
+                <th class="inday-1">23<sub>5</sub></th>
+                <th class="inday-1">24<sub>6</sub></th>
+                <th class="sat">25<sub>7</sub></th>
+            </tr>
+            <tr>
+                <th class="sun">26<sub>8</sub></th>
+                <th class="inday-1">27<sub>9</sub></th>
+                <th class="inday-1">28<sub>10</sub></th>
+                <th class="inday-1">29<sub>11</sub></th>
+                <th class="inday-1">30<sub>12</sub></th>
+                <th class="inday-1">31<sub>13</sub></th>
+                <th class="sat">1<sub>14</sub></th>
+            </tr>
+        </table>
+    </table>
+</body>
+</html>
