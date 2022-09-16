@@ -7,16 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let num1;
-            num2;
-        num1 = prompt("Nhap So a");
-        alert('nhap so a');
-        num2 = prompt("Nhap So b");
-        let a = parseInt(num1);
-        let b = parseInt(num2);
-        let 
-
-    </script>
+    <div id="messageDiv"></div>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+ function showMessage(){
+     document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+ }
+</script>
 </body>
 </html>
