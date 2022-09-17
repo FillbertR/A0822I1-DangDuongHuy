@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border: none;
+            width: 700px;
+        }
+        #currency{
+            width: 125px;
+        }
+        #country{
+            width: 125px;
+        }
+        #convert{
+            width: 125px;
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <table>
+            <tr>
+                <th><strong>Amount</strong></th>
+                <th><strong>Form Currency</strong></th>
+                <th><strong>To Currency</strong></th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="text" name="amount" id="amount" >
+                </th>
+                <th>
+                    <select name="country" id="country" value="country">
+                        <option value="VietNam" class="vn">VietNam</option>
+                        <option value="USA" class="us">USA</option>
+                    </select>
+                </th>
+                <th>
+                    <select name="currency" id="currency" value="currency">
+                        <option value="USD" class="vn" >USD</option>
+                        <option value="VND" class="us">VND</option>
+                    </select>
+                </th>
+                <th>
+                    <input type="button" name="convert" id="convert" value="Convert">
+                </th>
+            </tr>
+        </table>
+
+    </form>
+    <script>
+       let a = document.getElementById('amount').amount;
+       let b = document.getElementById('country').country;
+       let c = document.getElementById('currency').currency;
+       if (b&c == document.getElementsByClassName('vn')){
+        (d = a*23.123);
+        var button = document.getElementById("convert");
+        button.onclick = function(){
+            document.write('Result: VND' + d);
+        }}
+        else{
+        (d = a/23.123);
+        document.write('Result: VND' + d)
+       }
+    </script>
+</body>
+</html>
