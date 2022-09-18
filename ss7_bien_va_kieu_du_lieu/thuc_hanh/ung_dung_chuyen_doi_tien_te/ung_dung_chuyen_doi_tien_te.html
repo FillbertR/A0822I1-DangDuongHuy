@@ -33,7 +33,10 @@
             </tr>
             <tr>
                 <th>
-                    <input type="text" name="amount" id="amount" >
+                    <label for="innerHTML">
+                        <input type="text" name="amount" id="amount" placeholder="nhap so tien">
+                    </label>
+                    
                 </th>
                 <th>
                     <select name="country" id="country" value="country">
@@ -48,25 +51,27 @@
                     </select>
                 </th>
                 <th>
-                    <input type="button" name="convert" id="convert" value="Convert">
+                    <button type="button" name="convert" onclick="convert">Convert</button>
                 </th>
             </tr>
         </table>
-
+        <p id="Result">Result</p>
     </form>
     <script>
-       let a = document.getElementById('amount').amount;
-       let b = document.getElementById('country').country;
-       let c = document.getElementById('currency').currency;
-       if (b&c == document.getElementsByClassName('vn')){
-        (d = a*23.123);
-        var button = document.getElementById("convert");
-        button.onclick = function(){
-            document.write('Result: VND' + d);
-        }}
-        else{
-        (d = a/23.123);
-        document.write('Result: VND' + d)
+       function convert(){
+        const a = 23.123;
+        let giaTri = document.getElementById('amount');
+        let b = document.getElementById('country');
+        let c = document.getElementById('currency');
+        if (b == c){
+            document.getElementById('Result').innerHTML = "Result: " + giaTri;
+        }
+        if (b == 'vn'  &&  c == 'vn'){
+            document.getElementById('Result').innerHTML = "Result: " + giaTri/a;
+        }
+        if (b == 'us' && c == 'us'){
+            document.getElementById('Result').innerHTML = "Result: " + giaTri*a;
+        }
        }
     </script>
 </body>
