@@ -35,13 +35,34 @@
     </form>
     <script>
         function add(){
-            let a = parseFloat(document.getElementById("first").value);
-            let b = parseFloat(document.getElementById("seccond").value);
+            var a = parseFloat(document.getElementById("first").value);
+            var b = parseFloat(document.getElementById("seccond").value);
             addition = (a + b);
             document.getElementById("resultDivision").innerHTML = "Result Division: " + addition;
+            document.write("Result Division: " + addition);
 
         }
-            
+        function sub(){
+            var a = parseFloat(document.getElementById("first").value);
+            var b = parseFloat(document.getElementById("seccond").value);
+            subtraction = (a - b);
+            document.getElementById("resultDivision").innerHTML = "Result Division: " + subtraction;
+            document.write("Result DIvision: " + subtraction);
+        }
+        function mul(){
+            var a = parseFloat(document.getElementById("first").value);
+            var b = parseFloat(document.getElementById("seccond").value);
+            mutiplipcation = (a * b);
+            document.getElementById("resultDivision").innerHTML = "Result Division: " + multiplipcation;
+            document.write("Result Division: " + multiplication);
+        }
+        function div(){
+            var a = parseFloat(document.getElementById("first").value);
+            var b = parseFloat(document.getElementById("seccond").value);
+            division = (a / b);
+            document.getElementById("resultDivision").innerHTML = "Result Division: " + division;
+            document.write("Result Division: " + Division);
+        }
     </script>
 </body>
 </html>
