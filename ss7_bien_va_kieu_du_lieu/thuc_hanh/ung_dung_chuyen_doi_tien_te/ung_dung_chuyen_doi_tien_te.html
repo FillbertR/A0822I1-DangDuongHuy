@@ -46,8 +46,8 @@
                 </th>
                 <th>
                     <select name="currency" id="currency" value="currency">
-                        <option value="USD" class="vn" >USD</option>
-                        <option value="VND" class="us">VND</option>
+                        <option value="USD" class="us" >USD</option>
+                        <option value="VND" class="vn">VND</option>
                     </select>
                 </th>
                 <th>
@@ -64,15 +64,16 @@
         let b = document.getElementById('country');
         let c = document.getElementById('currency');
         if (b == c){
-            document.getElementById('Result').innerHTML = "Result: " + giaTri;
+            document.write('Result').innerHTML = document.getElementById('Result').innerHTML + giaTri;
         }
         if (b == 'vn'  &&  c == 'vn'){
-            document.getElementById('Result').innerHTML = "Result: " + giaTri/a;
+            document.write('Result').innerHTML = document.getElementById('Result').innerHTML + giaTri/a;
         }
         if (b == 'us' && c == 'us'){
-            document.getElementById('Result').innerHTML = "Result: " + giaTri*a;
+            document.write('Result').innerHTML = document.getElementById('Result').innerHTML + giaTri*a;
         }
        }
+       
     </script>
 </body>
 </html>

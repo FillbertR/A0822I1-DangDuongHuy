@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="get">
+        <table>
+            <tr>
+                <th>
+                    <input type="text" name="first" id="first">
+                </th>
+                <th>
+                    <input type="text" name="seccond" id="seccond">
+                </th>
+            </tr>
+            <tr>
+                <th colspan="1">
+                    <button type="button" name="addition" id="plus"  onclick="add">Addition(+)</button>
+                
+                    <button type="button" name="subtraction" id="des" onclick="sub">Subtraction(-)</button>
+                </th>
+                <th colspan="1">
+                    <button type="button" name="multiplication" id="mul" onclick="mul">Mutiplication(X)</button>
+                
+                
+                    <button type="button" name="division" id="di"  onclick="div">Division(/)</button>
+                </th>
+            </tr>
+        </table>
+        <p id="resultDivision">Result Division: </p>
+    </form>
+    <script>
+        function add(){
+            let a = parseFloat(document.getElementById("first").value);
+            let b = parseFloat(document.getElementById("seccond").value);
+            addition = (a + b);
+            document.getElementById("resultDivision").innerHTML = "Result Division: " + addition;
+
+        }
+            
+    </script>
+</body>
+</html>
